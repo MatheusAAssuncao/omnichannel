@@ -10,7 +10,6 @@ class Home extends BaseController
     public function index()
     {
         $data['mongo'] = $this->_insertMongoData();
-        echo view('welcome_message', $data);
     }
 
     protected function _insertMongoData() {

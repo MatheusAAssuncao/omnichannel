@@ -21,6 +21,7 @@ use Psr\Log\LoggerInterface;
  */
 class BaseController extends Controller
 {
+    protected $data = ['title' => "Omnichannel"];
     /**
      * Instance of the main Request object.
      *
