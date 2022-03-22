@@ -1193,3 +1193,15 @@ if (! function_exists('_debug')) {
         }
     }
 }
+
+if (! function_exists('getAwesomeIcon')) {
+    function getAwesomeIcon($name, $style = "") {
+        if (!empty($style)) {
+            $style = 'style="'.$style.'"';
+        }
+        
+        $icon = '<i class="fa-solid fa-'.$name.'" '.$style.'></i>';
+        
+        return $icon;
+    }
+}

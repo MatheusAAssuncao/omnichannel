@@ -28,7 +28,7 @@ html, body {
     height: 100%;
     width: 100%;
     position: fixed;
-    overflow: scroll;
+    /* overflow: scroll; */
     -webkit-overflow-scrolling: touch;
     overflow-x: hidden;
 }
@@ -63,6 +63,18 @@ html, body {
     color: #263238;
 }
 
+.row {
+    margin-top: 6px;
+}
+
+.align-right {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
 a {
     color: #037EE0;
     text-decoration: none;
@@ -91,18 +103,33 @@ table td:before, table th:before {
     opacity: 0.2;
 }
 
-th {
+.table th {
     font-weight: bold !important;
     text-align: center;
 }
 
+.table td, .table th {
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.table td:not(.tleft) {
+    text-align: center;
+}
+
 button {
+    /* topo | direita | inferior | esquerda */
+    padding: 3px 9px 3px 9px;
     background-color: #ED1847;
     border-radius: 10px;
     border-width: 0;
     color: white;
-    padding-left: 9px;
-    padding-right: 9px;
+    cursor: pointer;
+}
+
+.btn-large {
+    /* topo | direita | inferior | esquerda */
+    padding: 10px 39px 10px 39px !important;
 }
 
 .page-title-logo {
@@ -110,6 +137,8 @@ button {
     flex-direction: column;
     align-content: space-around;
     align-items: center;
+    margin-bottom: 30px;
+    position: relative;
 }
 
 .page-title-logo:before {
@@ -118,13 +147,6 @@ button {
     bottom: 0;
     width: 32px;
     border-bottom: 4px solid #FFBE00;
-}
-
-@media (min-width: 768px) {
-    .page-title-logo {
-        position: relative;
-    }
-
 }
 
 .page-title-logo h1 {
@@ -137,6 +159,116 @@ button {
 
 table {
     border-collapse: collapse;
-    border-radius: 1em;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
     overflow: hidden;
+}
+
+table .table-actions-icons {
+    color: #037EE0;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+table .table-actions-icons i {
+    margin-left: min(6px);
+    margin-right: min(6px);
+}
+
+table .table-workflow-cell {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+table .workflow-icons {
+    color: #263238;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 3px;
+}
+
+table .workflow-icons i {
+    margin-left: min(6px);
+    margin-right: min(6px);
+}
+
+.box-form {
+    border: 1px solid rgb(112, 112, 112, .2);
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.box-form-grey {
+    border: 1px solid rgb(112, 112, 112, 0);
+    background-color:rgb(112, 112, 112, .1);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.stepCounter {
+    font: normal normal normal 14px/19px Roboto;
+    font-weight: bold;
+    letter-spacing: 0px;
+    color: #263238;
+}
+
+div .form-inline-end {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+}
+
+.info-inline {
+    display: flex; 
+    flex-direction: row; 
+    flex-wrap: nowrap; 
+    justify-content: flex-end;
+}
+
+.info-inline strong {
+    color: rgba(38, 50, 56);
+}
+
+.info-inline p {
+    font: normal normal normal 13px/18px Roboto !important;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+input, button, label, textarea, select, .box-form-grey p {
+    margin-right: 4px;
+    margin-left: 4px;
+}
+
+.box-form p, .box-form-grey p {
+    line-break: anywhere;
+}
+
+input, textarea, select {
+    /* topo | direita | inferior | esquerda */
+    padding: 4px 11px 4px 11px;
+    border: 1px solid rgba(38, 50, 56, .2);
+    border-radius: 8px;
+    width: 100%;
+}
+
+input:focus-visible, textarea:focus-visible, select:focus-visible {
+    border-color: rgba(38, 50, 56, .3);
+}
+
+form label {
+    font: normal normal normal 14px/19px Roboto;
+    font-weight: bold;
+    color: rgba(38, 50, 56);
+}
+
+.box-form-grey p {
+    font: normal normal normal 15px/19px Roboto;
+    color:rgb(112, 112, 112, .8);
 }

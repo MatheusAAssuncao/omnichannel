@@ -6,7 +6,7 @@
     class Table extends codeIgniterTable {
         
         protected $customTemplate = array(
-            'table_open'         => '</br><div class="table-responsive"><table class="table align-middle mb-0 bg-white">',
+            'table_open'         => '</br><div class="table-responsive"><table class="table align-middle mb-0 bg-white table-striped">',
         
             'thead_open'         => '<thead style="background-color: #D0D2D3">',
             'thead_close'        => '</thead>',

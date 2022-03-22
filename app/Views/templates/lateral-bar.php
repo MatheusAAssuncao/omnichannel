@@ -221,6 +221,7 @@ a[aria-expanded="true"]::before {
     min-height: 100vh;
     transition: all 0.3s;
 	margin-top: 45px;
+    margin-bottom: 45px;
 }
 
 
@@ -279,6 +280,7 @@ a[aria-expanded="true"]::before {
 	#sidebarCollapseMobile {
         display: block;
         position: fixed;
+        z-index: 1000;
     }
 }
 </style>

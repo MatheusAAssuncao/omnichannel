@@ -22,6 +22,6 @@
 <body>
 	<div class="header">
 		<div class="info">
-			cofidis@salesgroup.pt <i class="fa-solid fa-power-off" style="padding-left: 10px; color: #037EE0"></i>
+			cofidis@salesgroup.pt <a href=''><?= getAwesomeIcon('power-off', 'padding-left: 10px; color: #037EE0')?></a>
 		</div>
 	</div>
