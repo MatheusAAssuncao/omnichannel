@@ -10,7 +10,7 @@ class Workflows extends BaseController
         $this->data['page_header']['name'] = "Workflows";
         echo view('templates/header', $this->data);
         echo view('templates/lateral-bar');
-        echo view('pages/workflows', $this->data);
+        echo view('pages/workflows/workflows', $this->data);
         echo view('templates/footer');
     }
 }

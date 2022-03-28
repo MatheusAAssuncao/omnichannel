@@ -10,7 +10,7 @@ class Campaigns extends BaseController
         $this->data['page_header']['name'] = "Campanhas Omni Channel";
         echo view('templates/header', $this->data);
         echo view('templates/lateral-bar');
-        echo view('pages/campaigns', $this->data);
+        echo view('pages/campaigns/campaigns', $this->data);
         echo view('templates/footer');
     }
 }

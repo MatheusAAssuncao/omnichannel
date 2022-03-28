@@ -14,9 +14,9 @@
 
     <script type="text/javascript">
         $(document).ready(function () {
-            $('#step1').show();
+            $('#step1').hide();
             $('#step2').hide();
-            $('#step3').hide();
+            $('#step3').show();
 
 			$('#step1ButtonNext').on('click', function(){
                 $('#step1').hide();
@@ -26,6 +26,11 @@
             $('#step2ButtonNext').on('click', function(){
                 $('#step2').hide();
                 $('#step3').show();
+            });
+
+            $('#step3ButtonBack').on('click', function(){
+                $('#step3').hide();
+                $('#step2').show();
             });
 		});
     </script>

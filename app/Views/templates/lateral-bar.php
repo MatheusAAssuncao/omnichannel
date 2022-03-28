@@ -208,7 +208,7 @@ a[aria-expanded="true"]::before {
 #sidebarCollapseMobile {
     padding-left: 15px !important;
     padding-right: 15px !important;
-    opacity: 0.5 !important;
+    opacity: 0.3 !important;
 	display: none;
 }
 
@@ -294,37 +294,37 @@ a[aria-expanded="true"]::before {
 			</a>
 		</div>
 		<div class="sidebar-header">
-			<img class="img-logo" width="125px" src="assets/images/sidebar/cofidis-logo.png" alt="logo Cofidis"/>
+			<img class="img-logo" width="125px" src="<?= base_url()?>/assets/images/sidebar/cofidis-logo.png" alt="logo Cofidis"/>
 		</div>
 
 		<ul class="components">
 			<li>
-				<a href="/campaigns">
-					<img src="assets/images/sidebar/megaphone.svg" alt="campanhas" title="Campanhas"/>
+				<a href="<?= base_url()?>/campaigns">
+					<img src="<?= base_url()?>/assets/images/sidebar/megaphone.svg" alt="campanhas" title="Campanhas"/>
 					<span>Campanhas</span>
 				</a>
 			</li>
 			<li>
-				<a href="/new-campaign">
-                    <img src="assets/images/sidebar/megaphone-new.svg" alt="nova campanha" title="Nova Campanha"/>
+				<a href="<?= base_url()?>/new-campaign">
+                    <img src="<?= base_url()?>/assets/images/sidebar/megaphone-new.svg" alt="nova campanha" title="Nova Campanha"/>
 					<span>Nova Campanha</span>
 				</a>
 			</li>
 			<li>
-				<a href="/workflows">
-                    <img src="assets/images/sidebar/workflows.svg" alt="workflows" title="Workflows"/>
+				<a href="<?= base_url()?>/workflows">
+                    <img src="<?= base_url()?>/assets/images/sidebar/workflows.svg" alt="workflows" title="Workflows"/>
 					<span>Workflows</span>
 				</a>
 			</li>
 			<li>
-				<a href="/templates">
-					<img src="assets/images/sidebar/templates.svg" alt="templates" title="Templates"/>
+				<a href="<?= base_url()?>/templates/sms">
+					<img src="<?= base_url()?>/assets/images/sidebar/templates.svg" alt="templates" title="Templates"/>
 					<span>Templates</span>
 				</a>
 			</li>
 			<li>
-				<a href="/statistics">
-                    <img src="assets/images/sidebar/statistics.svg" alt="estatísticas" title="Estatísticas"/>
+				<a href="<?= base_url()?>/statistics">
+                    <img src="<?= base_url()?>/assets/images/sidebar/statistics.svg" alt="estatísticas" title="Estatísticas"/>
 					<span>Estatísticas</span>
 				</a>
 			</li>

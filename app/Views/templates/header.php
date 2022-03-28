@@ -12,6 +12,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/switch-button.css">
 	<link href="/assets/fontawesome/css/fontawesome.css" rel="stylesheet">
 	<link href="/assets/fontawesome/css/brands.css" rel="stylesheet">
 	<link href="/assets/fontawesome/css/solid.css" rel="stylesheet">

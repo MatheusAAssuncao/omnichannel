@@ -16,9 +16,9 @@
 				toggleArrows();
 			});
 
-			var url = window.location.pathname;
+			var url = window.location.pathname.split('/');
 			$("#sidebar ul.components li a").each(function() {
-				if (this.href.indexOf(url) >= 0) {
+				if (this.href.indexOf(url[1]) >= 0) {
 					$(this).closest("li").addClass("hvr");
 				}
 			}); 

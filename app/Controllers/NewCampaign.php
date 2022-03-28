@@ -10,7 +10,7 @@ class NewCampaign extends BaseController
         $this->data['page_header']['name'] = "Nova Campanha";
         echo view('templates/header', $this->data);
         echo view('templates/lateral-bar');
-        echo view('pages/new-campaign', $this->data);
+        echo view('pages/newCampaign/new-campaign', $this->data);
         echo view('templates/footer');
     }
 }

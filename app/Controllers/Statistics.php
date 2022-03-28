@@ -10,7 +10,7 @@ class Statistics extends BaseController
         $this->data['page_header']['name'] = "Estatísticas Omni Channel";
         echo view('templates/header', $this->data);
         echo view('templates/lateral-bar');
-        echo view('pages/statistics', $this->data);
+        echo view('pages/statistics/statistics', $this->data);
         echo view('templates/footer');
     }
 }

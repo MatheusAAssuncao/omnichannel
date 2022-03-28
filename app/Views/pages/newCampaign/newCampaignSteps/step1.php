@@ -55,6 +55,7 @@
                         </div>
                     </div>
                 </div>
+                
                 <div class="align-right">
                     <button id="step1ButtonNext" type="button" class="btn-large">Seguinte</button>
                 </div>
