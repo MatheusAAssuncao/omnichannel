@@ -26,7 +26,7 @@
                 <?= view('templates/smartphone')?>
 
                 <div class="align-right">
-                    <button id="smsCreateButtonBack" type="button" class="btn-large btn-blue" style="min-width: 135px;">Voltar</button>
+                    <button id="smsCreateButtonBack" type="button" class="btn-large btn-blue" style="min-width: 90px;">Voltar</button>
                     <button type="button" class="btn-large smsCreateButtonSave">Gravar</button>
                 </div>
             </div>

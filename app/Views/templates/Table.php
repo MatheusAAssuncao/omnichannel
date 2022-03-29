@@ -40,7 +40,18 @@
             'table_close'        => '</table></div>'
         );        
 
-        function __construct() {
+        /**
+         * Create a new html table
+         *
+         * @param bool $tableTotal if true, it generates a stylized table for total values. Default false 
+         */
+        function __construct($tableTotal = false) {
+            if ($tableTotal) {
+                $this->customTemplate['thead_open'] = "<thead style='background-color: #263238'>";
+                $this->customTemplate['heading_cell_start'] = "<th style='color: #FAFAFA'>";
+                $this->customTemplate['cell_start'] = "<td style='font-weight: bold'>";
+            }
+
             parent::__construct();
             $this->setTemplate($this->customTemplate);
         }

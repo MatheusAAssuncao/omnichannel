@@ -14,9 +14,9 @@
 
     <script type="text/javascript">
         $(document).ready(function () {
-            $('#step1').hide();
+            $('#step1').show();
             $('#step2').hide();
-            $('#step3').show();
+            $('#step3').hide();
 
 			$('#step1ButtonNext').on('click', function(){
                 $('#step1').hide();

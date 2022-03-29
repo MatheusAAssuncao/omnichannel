@@ -1195,12 +1195,12 @@ if (! function_exists('_debug')) {
 }
 
 if (! function_exists('getAwesomeIcon')) {
-    function getAwesomeIcon($name, $style = "") {
+    function getAwesomeIcon($name, $style = "", $size = "1x") {
         if (!empty($style)) {
             $style = 'style="'.$style.'"';
         }
         
-        $icon = '<i class="fa-solid fa-'.$name.'" '.$style.'></i>';
+        $icon = '<i class="fa-solid fa-'.$name.' fa-'.$size.'" '.$style.'></i>';
         
         return $icon;
     }

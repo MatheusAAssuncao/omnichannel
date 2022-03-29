@@ -2,11 +2,9 @@
     <?php
         echo view('templates/collapse-sidebar-button-mobile');
         echo view('templates/page-title', ['page_header' => $page_header]);
-        $data['data']['Adicionar Template SMS'] = ['url' => '/templates/sms', 'class' => 'active'];
-        $data['data']['Adicionar Template Email'] = ['url' => '/templates/email', 'class' => ''];
-        echo view('templates/menu-bar', $data);
-        echo view('pages/templates/templatesTypes/sms-create');
-        echo view('pages/templates/templatesTypes/sms-view');
+        echo view('templates/menu-bar', $menu);
+        echo view('pages/templates/sms/create');
+        echo view('pages/templates/sms/view');
     ?>
 
     <script type="text/javascript">

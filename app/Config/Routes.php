@@ -33,6 +33,10 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 $routes->get('/new-campaign', 'NewCampaign::index');
+$routes->get('/statistics-omnichannel', 'StatisticsOmnichannel::index');
+$routes->get('/statistics-omnichannel/campaigns', 'StatisticsOmnichannel::campaigns');
+$routes->get('/statistics-sms', 'StatisticsSms::index');
+$routes->get('/statistics-sms/sms', 'StatisticsSms::sms');
 
 /*
  * --------------------------------------------------------------------

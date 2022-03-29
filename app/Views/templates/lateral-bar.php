@@ -60,6 +60,16 @@
     border-left: solid #FFBE00;
 }
 
+#sidebar ul.components li ul {
+    margin-left: 81px;
+    font-size: 13px;
+}
+
+#sidebar ul.components li ul a {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
 #sidebar.active ul {
     padding-left: 0px !important;
     margin-left: 0px !important;
@@ -156,6 +166,11 @@
 	margin-right: 14px;
 }
 
+#sidebar.active ul.components li img {
+	margin-right: 5px;
+    margin-left: 5px;
+}
+
 #sidebar ul.components li span {
 	padding-right: 20px;
 }
@@ -172,18 +187,6 @@
 
 a[data-toggle="collapse"] {
     position: relative;
-}
-
-a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
-    content: '\e259';
-    display: block;
-    position: absolute;
-    right: 20px;
-    font-family: 'Glyphicons Halflings';
-    font-size: 0.6em;
-}
-a[aria-expanded="true"]::before {
-    content: '\e260';
 }
 
 #divSidebarCollapse {
@@ -212,6 +215,12 @@ a[aria-expanded="true"]::before {
 	display: none;
 }
 
+.dropdown-toggle::after {
+    content: "" !important;
+    border-top: 0.4em solid !important;
+    border-right: 0.4em solid transparent !important;
+    border-left: 0.4em solid transparent !important;
+}
 
 /* ---------------------------------------------------
     CONTENT STYLE
@@ -246,7 +255,7 @@ a[aria-expanded="true"]::before {
     #sidebar.active {
         margin-left: 0 !important;
     }
-    #sidebar ul.components li a span {
+    #sidebar ul.components li a span, #sidebar:not(.active) ul.components li ul {
         display: none !important;
     }
     #sidebar .sidebar-header strong {
@@ -322,11 +331,19 @@ a[aria-expanded="true"]::before {
 					<span>Templates</span>
 				</a>
 			</li>
-			<li>
-				<a href="<?= base_url()?>/statistics">
+            <li>
+				<a href="#statisticsSubmenu" data-toggle="collapse" aria-expanded="true">
                     <img src="<?= base_url()?>/assets/images/sidebar/statistics.svg" alt="estatísticas" title="Estatísticas"/>
-					<span>Estatísticas</span>
+					<span>Estatísticas <?= getAwesomeIcon('caret-down', 'margin-left: 5px; margin-right: 0px')?></span>
 				</a>
+                <ul class="list-unstyled collapse show" id="statisticsSubmenu">
+                    <li>
+                        <a href="<?= base_url()?>/statistics-omnichannel/campaigns">Omni Channel</a>
+                    </li>
+                    <li>
+                        <a href="<?= base_url()?>/statistics-sms/sms">SMS - Histórico</a>
+                    </li>
+                </ul>
 			</li>
 		</ul>
 	</nav>

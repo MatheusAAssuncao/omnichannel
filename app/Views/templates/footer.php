@@ -18,7 +18,7 @@
 
 			var url = window.location.pathname.split('/');
 			$("#sidebar ul.components li a").each(function() {
-				if (this.href.indexOf(url[1]) >= 0) {
+				if (this.href.indexOf(url[1]) >= 0 && this.href.indexOf('#') < 0) {
 					$(this).closest("li").addClass("hvr");
 				}
 			}); 
